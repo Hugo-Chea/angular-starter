@@ -6,6 +6,7 @@ import { TodolistComponent } from './todolist/todolist.component';
 import { ListComponent } from './todolist/list/list.component';
 import { HeaderComponent } from './todolist/header/header.component';
 import { ItemComponent } from './todolist/list/item/item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ItemComponent } from './todolist/list/item/item.component';
   ],
   imports: [
     CommonModule,
-    TodolistRoutingModule
+    TodolistRoutingModule,
+    FormsModule
   ]
 })
 export class TodolistModule { }

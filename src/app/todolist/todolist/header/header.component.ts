@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  public inputItem:string = "";
+
+
+  @Output() addedItem = new EventEmitter<string>();
+  
+
+
+  constructor(){
+
+  }
+
+
+  addAction(){
+    this.addedItem.emit(this.inputItem);
+    console.log("aaaaaaaaaa",this.inputItem);
+  }
+  
 
 }

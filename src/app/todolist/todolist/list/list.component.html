@@ -1,4 +1,4 @@
-<p>list works!</p>
-<app-item></app-item>
-<app-item></app-item>
-<app-item></app-item>
+
+<ul id="todoList"  *ngFor="let item of listTodo">
+    <app-item [item]="item"></app-item>
+</ul>

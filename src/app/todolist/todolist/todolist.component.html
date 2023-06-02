@@ -1,4 +1,2 @@
-<p>todolist works!</p>
-
 <app-header></app-header>
-<app-list></app-list>
+<app-list [listTodo]="listTodo" (addedItem)="onNewItemAdded($event)" ></app-list>

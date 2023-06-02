@@ -1,1 +1,5 @@
-<p>header works!</p>
+<div id="header" class="header">
+    <h2>To Do List</h2>
+    <input [(ngModel)]="inputItem" type="text" id="myInput" placeholder="New todo item...">
+    <button class="addBtn" (click)="addAction()">Add</button>
+</div>
