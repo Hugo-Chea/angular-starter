@@ -1,2 +1,2 @@
-<app-header></app-header>
-<app-list [listTodo]="listTodo" (addedItem)="onNewItemAdded($event)" ></app-list>
+<app-header (addedItem)="onNewItemAdded($event)"></app-header>
+<app-list [listTodo]="listTodo" ></app-list>

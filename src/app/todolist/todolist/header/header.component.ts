@@ -21,7 +21,6 @@ export class HeaderComponent {
 
   addAction(){
     this.addedItem.emit(this.inputItem);
-    console.log("aaaaaaaaaa",this.inputItem);
   }
   
 

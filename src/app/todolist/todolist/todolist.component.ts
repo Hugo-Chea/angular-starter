@@ -24,6 +24,7 @@ export class TodolistComponent implements OnInit{
   
 
   onNewItemAdded(item:any){
+    console.log("wow")
     console.log("tototoot",item);
   }
 
