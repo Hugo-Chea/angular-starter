@@ -15,6 +15,11 @@ const routes: Routes = [
     path: 'todo',
     loadChildren: () =>
       import('src/app/todolist/todolist.module').then(m => m.TodolistModule)
+  }
+  ,{
+    path: 'justice',
+    loadChildren: () =>
+      import('src/app/justice/justice.module').then(m => m.JusticeModule)
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
